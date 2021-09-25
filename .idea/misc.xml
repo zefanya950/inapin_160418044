@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_hotel_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_hotel_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_my_book.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_profile_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/hotel_list_item.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

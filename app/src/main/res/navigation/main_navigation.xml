@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ubaya.inapin_160418044.view.authentication.LoginFragment"
+        android:label="Login Screen">
+        <action
+            android:id="@+id/actionRegisterFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/actionHotelList"
+            app:destination="@id/hotelListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.ubaya.inapin_160418044.view.authentication.RegisterFragment"
+        android:label="Register Screen"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/actionLoginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelListFragment"
+        android:name="com.ubaya.inapin_160418044.view.hotels.HotelListFragment"
+        android:label="HotelListFragment" >
+        <action
+            android:id="@+id/actionHotelDetail"
+            app:destination="@id/hotelDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelDetailFragment"
+        android:name="com.ubaya.inapin_160418044.view.hotels.HotelDetailFragment"
+        android:label="fragment_hotel_detail"
+        tools:layout="@layout/fragment_hotel_detail" />
+</navigation>
