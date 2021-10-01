@@ -7,6 +7,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.ubaya.inapin_160418044.R
 import com.ubaya.inapin_160418044.model.Hotel
+import com.ubaya.inapin_160418044.util.loadImage
 import kotlinx.android.synthetic.main.hotel_list_item.view.*
 
 class HotelListAdapter(val hotelList:ArrayList<Hotel>):RecyclerView.Adapter<HotelListAdapter.HotelViewHolder>() {
@@ -27,6 +28,7 @@ class HotelListAdapter(val hotelList:ArrayList<Hotel>):RecyclerView.Adapter<Hote
     override fun onBindViewHolder(holder: HotelViewHolder, position: Int) {
         holder.view.txtAddress.text = hotelList[position].hotelAddress
         holder.view.txtHotelName.text = hotelList[position].hotelName
+        holder.view.imageView.loadImage(hotelList[position].photoUrl,holder.view.progressBar)
 
         holder.view.btnDetail.setOnClickListener {
             val action = HotelListFragmentDirections.actionHotelDetail()

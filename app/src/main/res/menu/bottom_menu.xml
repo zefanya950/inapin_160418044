@@ -13,11 +13,6 @@
         android:title="MyBook"
         app:showAsAction="always" />
     <item
-        android:id="@+id/itemNotification"
-        android:icon="@drawable/ic_baseline_notifications_24"
-        android:title="Notification"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/itemProfile"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="Profile"

@@ -5,5 +5,12 @@ data class Hotel(
     val hotelAddress:String?,
     val hotelPrice:String?,
     val hotelPhone:String?,
-    val photoUrl:String?
+    val photoUrl:String?,
+)
+
+data class HotelBook(
+    val hotelName:String?,
+    val hotelAddress:String?,
+    val photoUrl:String?,
+    val dateBook:String?
 )

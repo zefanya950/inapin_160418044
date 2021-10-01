@@ -6,11 +6,11 @@
     app:startDestination="@id/itemHome">
 
     <fragment
-        android:id="@+id/loginFragment"
+        android:id="@+id/itemLogin"
         android:name="com.ubaya.inapin_160418044.view.authentication.LoginFragment"
         android:label="Login Screen">
         <action
-            android:id="@+id/actionRegisterFragment"
+            android:id="@+id/actionRegister"
             app:destination="@id/registerFragment" />
         <action
             android:id="@+id/actionHotelList"
@@ -24,9 +24,9 @@
         android:label="Register Screen"
         tools:layout="@layout/fragment_register" >
         <action
-            android:id="@+id/actionLoginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/loginFragment" />
+            android:id="@+id/actionToLogin"
+            app:destination="@id/itemLogin"
+            app:popUpTo="@id/itemLogin" />
     </fragment>
     <fragment
         android:id="@+id/itemHome"
@@ -36,8 +36,8 @@
             android:id="@+id/actionHotelDetail"
             app:destination="@id/hotelDetailFragment" />
         <action
-            android:id="@+id/action_hotelListFragment_to_loginFragment2"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/actionLogin"
+            app:destination="@id/itemLogin" />
     </fragment>
     <fragment
         android:id="@+id/hotelDetailFragment"
@@ -45,7 +45,7 @@
         android:label="Hotel Detail"
         tools:layout="@layout/fragment_hotel_detail">
         <action
-            android:id="@+id/action_hotelDetailFragment_to_hotelListFragment"
+            android:id="@+id/actionHome"
             app:destination="@id/itemHome"
             app:popUpTo="@id/itemHome" />
     </fragment>
@@ -63,5 +63,18 @@
         android:id="@+id/itemProfile"
         android:name="com.ubaya.inapin_160418044.view.profile.ProfileFragment"
         android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/actionProfileDetail"
+            app:destination="@id/profileDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDetailFragment"
+        android:name="com.ubaya.inapin_160418044.view.profile.ProfileDetailFragment"
+        android:label="fragment_profile_detail"
+        tools:layout="@layout/fragment_profile_detail" >
+        <action
+            android:id="@+id/actionProfile"
+            app:destination="@id/itemProfile" />
+    </fragment>
 </navigation>
