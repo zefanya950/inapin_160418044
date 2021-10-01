@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/itemHome">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -14,7 +14,9 @@
             app:destination="@id/registerFragment" />
         <action
             android:id="@+id/actionHotelList"
-            app:destination="@id/hotelListFragment" />
+            app:destination="@id/itemHome"
+            app:popUpTo="@id/itemHome"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -23,19 +25,43 @@
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/actionLoginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/hotelListFragment"
+        android:id="@+id/itemHome"
         android:name="com.ubaya.inapin_160418044.view.hotels.HotelListFragment"
-        android:label="HotelListFragment" >
+        android:label="Home Screen">
         <action
             android:id="@+id/actionHotelDetail"
             app:destination="@id/hotelDetailFragment" />
+        <action
+            android:id="@+id/action_hotelListFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/hotelDetailFragment"
         android:name="com.ubaya.inapin_160418044.view.hotels.HotelDetailFragment"
-        android:label="fragment_hotel_detail"
-        tools:layout="@layout/fragment_hotel_detail" />
+        android:label="Hotel Detail"
+        tools:layout="@layout/fragment_hotel_detail">
+        <action
+            android:id="@+id/action_hotelDetailFragment_to_hotelListFragment"
+            app:destination="@id/itemHome"
+            app:popUpTo="@id/itemHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemMyBook"
+        android:name="com.ubaya.inapin_160418044.view.hotels.MyBookFragment"
+        android:label="My Book"
+        tools:layout="@layout/fragment_my_book" />
+    <fragment
+        android:id="@+id/itemNotification"
+        android:name="com.ubaya.inapin_160418044.view.hotels.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.ubaya.inapin_160418044.view.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

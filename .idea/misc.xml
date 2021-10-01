@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_hotel_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_hotel_list.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_login.xml" value="0.25" />
@@ -13,6 +13,7 @@
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_profile_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_register.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/hotel_list_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
