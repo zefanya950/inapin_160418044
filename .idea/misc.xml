@@ -7,7 +7,7 @@
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/book_list_item.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_hotel_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_hotel_list.xml" value="0.36666666666666664" />
-        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_login.xml" value="0.5" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_my_book.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
@@ -16,6 +16,8 @@
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/layout/hotel_list_item.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/menu/drawer_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
+        <entry key="..\:/S7/ANMP/Tugas/Inapin_160418044/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22135416666666666" />
       </map>
     </option>
   </component>

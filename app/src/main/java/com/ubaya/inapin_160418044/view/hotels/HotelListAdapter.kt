@@ -31,7 +31,12 @@ class HotelListAdapter(val hotelList:ArrayList<Hotel>):RecyclerView.Adapter<Hote
         holder.view.imageView.loadImage(hotelList[position].photoUrl,holder.view.progressBar)
 
         holder.view.btnDetail.setOnClickListener {
-            val action = HotelListFragmentDirections.actionHotelDetail()
+            val hotelName = hotelList[position].hotelName
+            val hotelAddress = hotelList[position].hotelAddress
+            val hotelPrice = hotelList[position].hotelPrice
+            val hotelPhone = hotelList[position].hotelPhone
+            val urlPhoto = hotelList[position].photoUrl
+            val action = HotelListFragmentDirections.actionHotelDetail(hotelName.toString(),hotelAddress.toString(),hotelPrice.toString(),urlPhoto.toString(),hotelPhone.toString())
             Navigation.findNavController(it).navigate(action)
         }
 

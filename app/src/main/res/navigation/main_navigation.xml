@@ -11,7 +11,8 @@
         android:label="Login Screen">
         <action
             android:id="@+id/actionRegister"
-            app:destination="@id/registerFragment" />
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/registerFragment" />
         <action
             android:id="@+id/actionHotelList"
             app:destination="@id/itemHome"
@@ -26,7 +27,8 @@
         <action
             android:id="@+id/actionToLogin"
             app:destination="@id/itemLogin"
-            app:popUpTo="@id/itemLogin" />
+            app:popUpTo="@id/itemLogin"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/itemHome"
@@ -48,6 +50,19 @@
             android:id="@+id/actionHome"
             app:destination="@id/itemHome"
             app:popUpTo="@id/itemHome" />
+        <argument
+            android:name="hotelName"
+            app:argType="string" />
+        <argument
+            android:name="hotelAddress"
+            app:argType="string" />
+        <argument android:name="hotelPrice"
+            app:argType="string" />
+        <argument android:name="urlPhoto"
+            app:argType="string" />
+        <argument
+            android:name="hotelPhone"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/itemMyBook"
@@ -71,8 +86,8 @@
     <fragment
         android:id="@+id/profileDetailFragment"
         android:name="com.ubaya.inapin_160418044.view.profile.ProfileDetailFragment"
-        android:label="fragment_profile_detail"
-        tools:layout="@layout/fragment_profile_detail" >
+        android:label="Profile Detail"
+        tools:layout="@layout/fragment_profile_detail">
         <action
             android:id="@+id/actionProfile"
             app:destination="@id/itemProfile" />

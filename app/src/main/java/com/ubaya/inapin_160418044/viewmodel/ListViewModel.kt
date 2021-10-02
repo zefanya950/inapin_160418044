@@ -10,11 +10,11 @@ class ListViewModel:ViewModel() {
     val loadingDoneLD = MutableLiveData<Boolean>()
 
     fun refresh(){
-        val hotel1 = Hotel("Myrlene","Di Loreto","$168.38","3839633326","http://dummyimage.com/100x75.png/cc0000/ffffff")
-        val hotel2 = Hotel("Cassandry","Victoria","$187.69","1708790073","http://dummyimage.com/100x75.png/5fa2dd/ffffff")
-        val hotel3 = Hotel("Fransisco","La Follette","$99.45","9246738382","http://dummyimage.com/100x75.png/dddddd/000000")
-        val hotel4 = Hotel("Anatole","Park Meadow","$90.12","4136254396","http://dummyimage.com/100x75.png/ff4444/ffffff")
-        val hotel5 = Hotel("Westbrook","5th Avenue","$75.23","1308545179","http://dummyimage.com/100x75.png/dddddd/000000")
+        val hotel1 = Hotel("JW Marriott","Surabaya","Rp.500.000","3839633326","https://lh5.googleusercontent.com/p/AF1QipMHmcuqWuRiYC_IG4aCZfRDwxiVDBBQUii1BHT6=w325-h487-k-no")
+        val hotel2 = Hotel("Amaris Hotel","Ponorogo","Rp.200.000","1708790073","https://lh3.googleusercontent.com/p/AF1QipMkTttyeIl5CRZ2qSErZX6mSJcbY2fdFmnQbhJ1=w296-h202-n-k-rw-no-v1")
+        val hotel3 = Hotel("Hotel Indonesia","Jakarta","Rp.1.000.000","9246738382","https://www.wowkeren.com/display/images/photo/2020/01/20/00292949_1.jpg")
+        val hotel4 = Hotel("Novotel Semarang","Semarang","Rp.750.000","4136254396","https://lh4.googleusercontent.com/proxy/11sE4GwxBFldSH2L75clPzKf9tpKTKnLTRZBk5Xc_qI5uLSV83asW4fnVHTZyzJJJPgo98QY195NV2JUQ9DRd84bF7LytrRGYBevE0IIWySwQqQnEg1-x1PgB5E9LECxhsZwvSR4udyODdC7Z7KaZK4gUwXo854=w325-h178-k-no")
+        val hotel5 = Hotel("Aryaduta Hotel Bandung","Bandung","Rp.1.250.000","1308545179","https://lh5.googleusercontent.com/p/AF1QipPBJ0z4S1yoQH7nRzzzgcn_8TikWYRReMMl18q-=w325-h216-k-no")
 
         hotelsLD.value = arrayListOf<Hotel>(hotel1,hotel2,hotel3,hotel4,hotel5)
         loadingErrorLD.value = false
