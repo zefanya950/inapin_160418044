@@ -81,7 +81,8 @@
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/actionProfileDetail"
-            app:destination="@id/profileDetailFragment" />
+            app:destination="@id/profileDetailFragment"
+            app:popUpTo="@id/profileDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileDetailFragment"
@@ -90,6 +91,8 @@
         tools:layout="@layout/fragment_profile_detail">
         <action
             android:id="@+id/actionProfile"
-            app:destination="@id/itemProfile" />
+            app:destination="@id/itemProfile"
+            app:popUpTo="@id/itemProfile"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

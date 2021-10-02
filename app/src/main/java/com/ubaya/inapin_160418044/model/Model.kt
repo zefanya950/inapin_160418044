@@ -14,3 +14,9 @@ data class HotelBook(
     val photoUrl:String?,
     val dateBook:String?
 )
+
+data class Notification(
+    val title:String?,
+    val type:String?,
+    val time:String?
+)
