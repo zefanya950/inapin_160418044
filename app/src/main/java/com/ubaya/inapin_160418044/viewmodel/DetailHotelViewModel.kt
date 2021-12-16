@@ -3,9 +3,9 @@ package com.ubaya.inapin_160418044.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.ubaya.inapin_160418044.model.Hotel
 import com.ubaya.inapin_160418044.model.HotelBook
+import com.ubaya.inapin_160418044.model.Notification
 import com.ubaya.inapin_160418044.util.buildDB
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -13,19 +13,28 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
 
-class BookViewModel(application: Application): AndroidViewModel(application), CoroutineScope {
-    val booksLD = MutableLiveData<List<HotelBook>>()
-    val loadingErrorLD = MutableLiveData<Boolean>()
-    val loadingDoneLD = MutableLiveData<Boolean>()
-
+class DetailHotelViewModel(application: Application):AndroidViewModel(application),CoroutineScope {
     private var job = Job()
+    val hotelLD = MutableLiveData<Hotel>()
 
-    fun refresh(){
-        loadingErrorLD.value = false
-        loadingDoneLD.value = true
-        launch{
+    fun fetch(hotelId:Int){
+        launch {
             val db = buildDB(getApplication())
-            booksLD.value = db.hotelBookDao().selectAllBook()
+            hotelLD.value = db.hotelDao().selectHotel(hotelId)
+        }
+    }
+
+    fun addBook(book: HotelBook){
+        launch {
+            val db = buildDB(getApplication())
+            db.hotelBookDao().insertBook(book)
+        }
+    }
+
+    fun addNotification(notification: Notification){
+        launch {
+            val db = buildDB(getApplication())
+            db.NotificationDao().insertNotification(notification)
         }
     }
 

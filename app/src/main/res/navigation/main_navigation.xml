@@ -51,18 +51,8 @@
             app:destination="@id/itemHome"
             app:popUpTo="@id/itemHome" />
         <argument
-            android:name="hotelName"
-            app:argType="string" />
-        <argument
-            android:name="hotelAddress"
-            app:argType="string" />
-        <argument android:name="hotelPrice"
-            app:argType="string" />
-        <argument android:name="urlPhoto"
-            app:argType="string" />
-        <argument
-            android:name="hotelPhone"
-            app:argType="string" />
+            android:name="hotelId"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/itemMyBook"
@@ -94,5 +84,8 @@
             app:destination="@id/itemProfile"
             app:popUpTo="@id/itemProfile"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
     </fragment>
 </navigation>
